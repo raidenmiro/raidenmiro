@@ -1,0 +1,25 @@
+{
+  "name": "raidenmiro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:raidenmiro/raidenmiro.git",
+  "author": "raindenmiro <rk.ku.202014@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "email": "rk.ku.202014@gmail.com",
+    "url": "https://github.com/raidenmiro/raidenmiro"
+  },
+  "scripts": {
+    "build": "node ./update_time",
+    "format": "prettier --write ./update_time.js"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.5"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}
