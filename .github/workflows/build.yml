@@ -12,14 +12,18 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v2
+
     - name: Install nodejs
       uses: actions/setup-node@v2
       with:
         node-version: '18'
+
     - name: Install dependency
       uses: yarn install --frozen-lockfile
+
     - name: Build new readme text
       run: yarn build
+
     - name: Commit changes and push
       run: |
        git config --global user.name "Robert Kuzhin"
