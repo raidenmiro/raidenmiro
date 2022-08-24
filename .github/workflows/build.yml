@@ -9,7 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout repo
       uses: actions/checkout@v2
@@ -20,7 +19,7 @@ jobs:
     - name: Install dependency
       uses: yarn install --frozen-lockfile
     - name: Build new readme text
-      uses: yarn build
+      run: yarn build
     - name: Commit changes and push
       run: |
        git config --global user.name "Robert Kuzhin"
