@@ -16,9 +16,12 @@
     "node": "18.x"
   },
   "dependencies": {
-    "dayjs": "^1.11.5"
+    "dayjs": "^1.11.5",
+    "node-fetch": "2"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
     "prettier": "^2.7.1"
   }
 }

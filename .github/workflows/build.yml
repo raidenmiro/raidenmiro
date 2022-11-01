@@ -21,8 +21,14 @@ jobs:
       - name: Install dependency
         run: yarn install --frozen-lockfile
 
+      - name: Create env file
+        run: |
+         touch .env
+         echo BOT_URL=${{ secrets.BOT_URL }} >> .env
+         echo SECRET_HASH=${{ secrets.SECRET_HASH }} >> .env
+
       - name: Build new readme text
-        run: yarn build
+        run: yarn build 
 
       - name: Commit changes and push
         run: |
