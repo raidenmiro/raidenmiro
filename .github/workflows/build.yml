@@ -1,33 +1,33 @@
-name: Update README
+# name: Update README
 
-on: 
-  push:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 10 * * *'
+# on: 
+#   push:
+#   workflow_dispatch:
+#   schedule:
+#     - cron: '0 10 * * *'
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repo
+#         uses: actions/checkout@v2
 
-      - name: Install nodejs
-        uses: actions/setup-node@v2
-        with:
-          node-version: '18'
+#       - name: Install nodejs
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: '18'
 
-      - name: Install dependency
-        run: yarn install --frozen-lockfile
+#       - name: Install dependency
+#         run: yarn install --frozen-lockfile
 
-      - name: Build new readme text
-        run: yarn build
+#       - name: Build new readme text
+#         run: yarn build
 
-      - name: Commit changes and push
-        run: |
-         git config --global user.name "Robert Kuzhin"
-         git config --global user.email robertkuzhin@gmail.com
-         git add README.md
-         git commit -m "feat(README): updated"
-         git push
+#       - name: Commit changes and push
+#         run: |
+#          git config --global user.name "Robert Kuzhin"
+#          git config --global user.email robertkuzhin@gmail.com
+#          git add README.md
+#          git commit -m "feat(README): updated"
+#          git push
