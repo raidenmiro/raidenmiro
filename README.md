@@ -1,7 +1,7 @@
 # Hi there 👋
 
 [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40RKuzhin)](https://twitter.com/RKuzhin)
-[![Telegram](https://img.shields.io/badge/-telegram-red?color=white&logo=telegram&logoColor=black)](https://t.me/sumikono)
+[![Telegram](https://img.shields.io/badge/-telegram-red?color=white&logo=telegram&logoColor=black)](https://t.me/raidenmiro)
 
 <section>
   <div>
