@@ -1,8 +1,3 @@
-# Hi there 👋
-
-[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40raidenmiro)](https://twitter.com/raidenmiro)
-[![Telegram](https://img.shields.io/badge/-telegram-red?color=white&logo=telegram&logoColor=black)](https://t.me/raidenmiro)
-
 <section>
   <div>
   <h1>About me</h1>
